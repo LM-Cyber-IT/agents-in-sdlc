@@ -18,11 +18,11 @@ Crea un cuestionario sobre el espacio desde una carpeta vacía, publícalo en Gi
 
 ### [Primeros pasos con GitHub Copilot CLI][first-steps-cli]
 
-Crea el mismo cuestionario desde la terminal, revisa las diferencias, ejecuta sesiones en paralelo en árboles de trabajo, planifica antes de editar y crea, combina y delega solicitudes de incorporación de cambios sin salir del shell.
+Crea el mismo cuestionario desde la terminal, revisa las diferencias, ejecuta sesiones en paralelo en árboles de trabajo, planifica antes de editar y crea, combina y delega solicitudes de incorporación de cambios sin salir del terminal.
 
 ### [Primeros pasos con Visual Studio Code][first-steps-vscode]
 
-Crea el cuestionario en VS Code, pruébalo en el explorador integrado, publícalo con Control de código fuente, trabaja con incidencias y solicitudes de incorporación de cambios mediante las herramientas de GitHub y delega trabajo a una sesión en la nube.
+Crea el cuestionario en VS Code, pruébalo en el navegador integrado, publícalo con **Source Control**, trabaja con incidencias y solicitudes de incorporación de cambios mediante las herramientas de GitHub y delega trabajo a una sesión en la nube.
 
 ## Desarrollo en escenarios reales
 

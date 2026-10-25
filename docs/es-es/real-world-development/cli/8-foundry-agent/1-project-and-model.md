@@ -76,7 +76,7 @@ Las habilidades enseñan a Copilot el flujo de trabajo, mientras que los servido
 
 En los ejercicios anteriores puede que hayas creado y enviado otras ramas de funcionalidades. Empezarás esta serie opcional desde una rama `main` actualizada para mantener separado el trabajo del agente.
 
-1. En el terminal de shell, cambia a `main`, descarga los últimos cambios y crea una rama para el Backer Concierge:
+1. En el terminal, cambia a `main`, descarga los últimos cambios y crea una rama para el Backer Concierge:
 
     ```bash
     git checkout main
@@ -91,7 +91,7 @@ El agente necesita el catálogo en un archivo que pueda leer. El ejemplo de Tail
 1. Vuelve a Copilot CLI e introduce:
 
     ```text
-    Install the project dependencies, seed the database, then run the existing db:export script. Show me the command output and summarize the shape and grounding limits of db/catalog.json.
+    Instala las dependencias del proyecto, carga los datos iniciales en la base de datos y ejecuta el script db:export existente. Muéstrame la salida de los comandos y resume la estructura de db/catalog.json y los límites de los datos en que pueden basarse las respuestas.
     ```
 
     Copilot debería ejecutar el equivalente de:
@@ -113,7 +113,7 @@ Antes de que Copilot cree recursos de Azure o añada código del agente, usarás
 1. Introduce el siguiente prompt:
 
     ```text
-    /plan Use the Microsoft Foundry Skill to plan a Backer Concierge hosted agent for this existing Tailspin Toys repository. Use a public Foundry project, Python 3.13, Microsoft Agent Framework, the Responses API, the Basic sample, and code deployment. Keep the agent in agent/backer-concierge and keep one azure.yaml at the repository root. Ground every answer in db/catalog.json, preserve conversation context, and add focused tests. Include project setup, model selection, local testing, deployment, remote invocation, estimated cost-bearing resources and cleanup.
+    /plan Usa la habilidad Microsoft Foundry para planificar un agente hospedado Backer Concierge para este repositorio existente de Tailspin Toys. Usa un proyecto público de Foundry, Python 3.13, Microsoft Agent Framework, Responses API, el ejemplo Basic y el despliegue de código. Mantén el agente en agent/backer-concierge y deja un único archivo azure.yaml en la raíz del repositorio. Fundamenta todas las respuestas en db/catalog.json, conserva el contexto de la conversación y añade pruebas específicas. Incluye la configuración del proyecto, la selección del modelo, las pruebas locales, el despliegue, la invocación remota, una estimación de los recursos que generan costes y la limpieza.
     ```
 
 2. Revisa el plan propuesto. Confirma que Copilot pretende usar la habilidad `microsoft-foundry` y que separa el agente hospedado de la aplicación Astro existente. Si observas algo preocupante o inesperado, solicita cambios antes de continuar.
@@ -126,7 +126,7 @@ El agente necesita un proyecto de Foundry y un modelo desplegado. Usarás la hab
 1. Pide a Copilot que cree el proyecto. Antes de aprobar la creación de recursos, comprueba la suscripción, la región y la cuota seleccionadas, así como el coste estimado:
 
     ```text
-    Use the Microsoft Foundry Skill to create a public Foundry project for this project. Use the resource group rg-tailspin-toys and project name tailspin-toys.
+    Usa la habilidad Microsoft Foundry para crear un proyecto público de Foundry para este proyecto. Usa el grupo de recursos rg-tailspin-toys y el nombre de proyecto tailspin-toys.
     ```
 
     ![Creación de un proyecto público de Foundry](../../../../_images/cli-8-create-foundry-project.png)
@@ -134,7 +134,7 @@ El agente necesita un proyecto de Foundry y un modelo desplegado. Usarás la hab
 2. Cuando el proyecto esté listo, pide a Copilot que recomiende un modelo:
 
     ```text
-    Use the Microsoft Foundry Skill to recommend two or three current chat models available in the tailspin-toys project for the Backer Concierge acceptance criteria in the issue titled "Add a Backer Concierge assistant for catalog questions". Prioritize low latency, instruction following, grounding fidelity, available quota, and models that aren't approaching retirement. There is no complex math or multi-step planning. Explain the tradeoffs and wait for me to choose a model from the recommended options.
+    Usa la habilidad Microsoft Foundry para recomendar dos o tres modelos de chat actuales disponibles en el proyecto tailspin-toys que cumplan los criterios de aceptación de Backer Concierge de la incidencia titulada "Add a Backer Concierge assistant for catalog questions". Da prioridad a la baja latencia, el seguimiento de instrucciones, la fidelidad de las respuestas a los datos disponibles, la cuota y los modelos que no estén próximos a retirarse. No se necesitan cálculos complejos ni planificación en varios pasos. Explica las ventajas e inconvenientes y espera a que elija uno de los modelos recomendados.
     ```
 
     Copilot puede pedirte que selecciones un modelo entre las opciones recomendadas.
@@ -146,7 +146,7 @@ El agente necesita un proyecto de Foundry y un modelo desplegado. Usarás la hab
 3. Selecciona un modelo entre las opciones recomendadas y pide a Copilot que lo despliegue. Revisa la capacidad y el coste antes de aprobar el despliegue:
 
     ```text
-    Deploy the model we selected to the tailspin-toys Foundry project and use the model name as the deployment name. Choose an SKU with available quota, ask me to confirm the capacity before deployment. After deployment, show me the deployment status.
+    Despliega el modelo que hemos seleccionado en el proyecto de Foundry tailspin-toys y usa el nombre del modelo como nombre del despliegue. Elige un nivel de servicio (SKU) con cuota disponible y pídeme que confirme la capacidad antes del despliegue. Después, muéstrame el estado del despliegue.
     ```
 
     ![Despliegue del modelo seleccionado](../../../../_images/cli-8-deploy-foundry-model.png)
@@ -195,7 +195,7 @@ Primero, asignarás a la cuenta con la que has iniciado sesión el rol **Foundry
 4. Vuelve a Copilot CLI e introduce:
 
     ```text
-    Use the Microsoft Foundry Skill to test my deployed model directly in the tailspin-toys project without creating an agent. Ground it with content from @db/catalog.json and ask: "I love puzzle games about tracking down bugs. What should I back, and how much funding has it raised?" Show me the response and useful metadata like tokens used and response time (only if you can obtain it). Do not change files or create resources.
+    Usa la habilidad Microsoft Foundry para probar directamente el modelo desplegado en el proyecto tailspin-toys, sin crear un agente. Fundamenta la prueba con el contenido de @db/catalog.json y pregunta: "Me encantan los juegos de puzles sobre encontrar errores. ¿A qué juego debería apoyar y cuánto dinero ha recaudado?" Muéstrame la respuesta y los metadatos útiles, como los tokens utilizados y el tiempo de respuesta, solo si puedes obtenerlos. No cambies archivos ni crees recursos.
     ```
 
     ![Respuesta del modelo de Foundry que recomienda un juego real del catálogo e indica que no hay datos de financiación disponibles](../../../../_images/cli-8-foundry-agent-response.png)

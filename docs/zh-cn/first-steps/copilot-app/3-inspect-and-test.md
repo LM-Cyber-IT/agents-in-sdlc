@@ -30,7 +30,7 @@ lastUpdated: 2026-10-12
 
 选择麦克风左侧的使用情况控件，打开计划和会话使用情况菜单。麦克风位于使用情况控件和 **Send** 之间。
 
-![使用情况菜单示意图，麦克风位于使用情况控件和 Send 按钮之间。它显示 GitHub Copilot Pro+ 计划、会话 AI 额度、输入和输出 token 数量，以及 40 万 token 中 16% 的上下文使用量。](../../../_images/first-steps-app-usage-details.svg)
+![使用情况菜单示意图，麦克风位于使用情况控件和 Send 按钮之间。它显示 GitHub Copilot Pro+ 计划、会话人工智能（AI）额度、输入和输出 token 数量，以及 40 万 token 中 16% 的上下文使用量。](../../../_images/first-steps-app-usage-details.svg)
 
 此菜单将帐户和会话使用情况与项目控件分开显示：
 

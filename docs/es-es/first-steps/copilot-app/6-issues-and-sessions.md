@@ -20,7 +20,7 @@ En esta lección:
 Envía el siguiente prompt:
 
 ```plaintext
-Review the space quiz and suggest three focused feature ideas that could each be completed in a short session. Create a separate GitHub issue for each idea with a clear title, user-focused description, and acceptance criteria. Do not implement them yet.
+Revisa el Space Quiz y propón tres funcionalidades concretas que puedan completarse en una sesión breve. Crea una incidencia de GitHub independiente para cada idea, con un título claro, una descripción centrada en el usuario y criterios de aceptación. No las implementes todavía.
 ```
 
 Abre **Issues**, revisa las tres incidencias y elige una que aporte un valor claro y tenga un alcance manejable.
@@ -38,7 +38,7 @@ Abre **Issues**, revisa las tres incidencias y elige una que aporte un valor cla
 5. Envía el siguiente prompt:
 
    ```plaintext
-   Implement this issue completely. Keep the single-file, dependency-free design, test the behavior in the integrated browser, and summarize the changes when finished.
+   Implementa esta incidencia por completo. Conserva el diseño de un solo archivo y sin dependencias, prueba el comportamiento en el navegador integrado y, al terminar, resume los cambios.
    ```
 
 El nuevo árbol de trabajo mantiene esta funcionalidad aislada de la rama predeterminada hasta que estés listo para revisarla y combinarla.
@@ -49,7 +49,7 @@ Cuando el agente informe del resultado, no te conformes con su palabra.
 
 1. Abre el panel desplegable de la derecha y selecciona la pestaña **Changes**.
 2. Lee las diferencias de cada archivo que haya modificado la sesión.
-3. Prueba la funcionalidad en el explorador integrado y confirma que cumple los criterios de aceptación de la incidencia.
+3. Prueba la funcionalidad en el navegador integrado y confirma que cumple los criterios de aceptación de la incidencia.
 
 ![Ilustración de la sesión de la aplicación Copilot con la pestaña Changes abierta en el panel desplegable de la derecha. Muestra un archivo modificado, index.html, con 142 líneas añadidas y 8 eliminadas, y las líneas de diferencias junto a la conversación de la sesión.](../../../_images/first-steps-app-changes-tab.svg)
 

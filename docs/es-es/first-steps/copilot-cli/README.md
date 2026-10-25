@@ -7,9 +7,9 @@ authors:
 lastUpdated: 2026-10-05
 ---
 
-Realiza un recorrido práctico por GitHub Copilot CLI, pensado para principiantes. Crearás un Space Quiz lleno de color desde una carpeta vacía y aprenderás el ciclo de trabajo centrado en la terminal: crear y revisar las diferencias antes de que Git escriba nada, ejecutar sesiones en paralelo, planificar antes de editar y, después, crear y combinar la solicitud de incorporación de cambios sin salir del shell.
+Realiza un recorrido práctico por GitHub Copilot CLI, pensado para principiantes. Crearás un Space Quiz lleno de color desde una carpeta vacía y aprenderás el ciclo de trabajo centrado en la terminal: crear y revisar las diferencias antes de que Git escriba nada, ejecutar sesiones en paralelo, planificar antes de editar y, después, crear y combinar la solicitud de incorporación de cambios sin salir del terminal.
 
-El taller dura aproximadamente entre 60 y 90 minutos. El proyecto utiliza un único archivo HTML sin dependencias de ejecución, así que puedes centrarte en aprender a usar la CLI y sus flujos de trabajo con agentes.
+El taller dura aproximadamente entre 60 y 90 minutos. El proyecto utiliza un único archivo escrito en lenguaje de marcado de hipertexto (HTML), sin dependencias de ejecución, así que puedes centrarte en aprender a usar GitHub Copilot CLI y sus flujos de trabajo con agentes.
 
 > [!NOTE]
 > Este taller fue creado por [James Montemagno][james] y adaptado de [Primeros pasos con GitHub Copilot][source-lab]. El contenido original está disponible bajo la [licencia MIT][source-license].

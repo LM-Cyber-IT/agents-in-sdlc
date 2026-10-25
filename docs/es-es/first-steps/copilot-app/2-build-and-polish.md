@@ -1,17 +1,17 @@
 ---
 title: "Lección 2 - Crear y perfeccionar el cuestionario"
-description: "Crea un Space Quiz en un solo archivo y perfecciónalo con el explorador integrado y el selector de elementos."
+description: "Crea un Space Quiz en un solo archivo y perfecciónalo con el navegador integrado y el selector de elementos."
 authors:
   - jamesmontemagno
 lastUpdated: 2026-09-28
 ---
 
-Utiliza un único prompt detallado para crear el Space Quiz, comprueba su comportamiento en el explorador integrado y realiza un ajuste visual con el selector de elementos.
+Utiliza un único prompt detallado para crear el Space Quiz, comprueba su comportamiento en el navegador integrado y realiza un ajuste visual con el selector de elementos.
 
 En esta lección:
 
 - crearás un cuestionario sin dependencias en `index.html`.
-- probarás el cuestionario en el explorador integrado.
+- probarás el cuestionario en el navegador integrado.
 - inspeccionarás el código generado.
 - perfeccionarás un elemento seleccionado sin perder la accesibilidad.
 
@@ -20,7 +20,7 @@ En esta lección:
 Envía el siguiente prompt en tu sesión `space-quiz`:
 
 ```plaintext
-Create a space exploration quiz with 10 questions, a progress bar, score counter, and colorful animated feedback (green for correct, red shake for wrong). Show a results screen with emoji reaction at the end. Center in a narrow column. Single index.html, no server/dependencies. Polished, sans-serif, 14–16px body, prefers-color-scheme. Open in the integrated browser.
+Crea un cuestionario de exploración espacial con 10 preguntas, una barra de progreso, un contador de puntuación y respuestas visuales animadas y coloridas (verde para las respuestas correctas y una sacudida roja para las incorrectas). Al final, muestra una pantalla de resultados con una reacción con un emoji. Centra el contenido en una columna estrecha. Usa un único archivo index.html, sin servidor ni dependencias. Dale un acabado cuidado, con una fuente sans serif y texto de 14–16 px, y respeta prefers-color-scheme. Ábrelo en el navegador integrado.
 ```
 
 Cuando el agente termine, responde a varias preguntas y confirma que:
@@ -33,7 +33,7 @@ Cuando el agente termine, responde a varias preguntas y confirma que:
 
 ## Inspecciona el código generado
 
-Contrae la barra lateral izquierda y el panel del explorador de la derecha y, después, revisa `index.html` en el área de código ampliada. Observa cómo HTML, CSS y JavaScript funcionan juntos en un único archivo. Restaura ambos paneles cuando termines.
+Contrae la barra lateral izquierda y el panel del explorador de la derecha y, después, revisa `index.html` en el área de código ampliada. Observa cómo el lenguaje de marcado de hipertexto (HTML), las hojas de estilo en cascada (CSS) y JavaScript funcionan juntos en un único archivo. Restaura ambos paneles cuando termines.
 
 ## Perfecciona con el selector de elementos
 
@@ -42,10 +42,10 @@ Contrae la barra lateral izquierda y el panel del explorador de la derecha y, de
 3. Envía el siguiente prompt:
 
    ```plaintext
-   Make the selected element feel more like a mission-control display. Keep it accessible and preserve the existing light and dark themes.
+   Haz que el elemento seleccionado se parezca más a una pantalla de control de misión. Mantén la accesibilidad y conserva los temas claro y oscuro existentes.
    ```
 
-4. Observa cómo se actualiza el explorador integrado y comprueba el cambio.
+4. Observa cómo se actualiza el navegador integrado y comprueba el cambio.
 
 ## Ajustes opcionales
 

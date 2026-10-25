@@ -1,17 +1,17 @@
 ---
 title: "Lección 1 - Crear en el área de trabajo"
-description: "Crea el Space Quiz en VS Code, previsualízalo en el explorador integrado y perfecciona un elemento seleccionado."
+description: "Crea el Space Quiz en VS Code, previsualízalo en el navegador integrado y perfecciona un elemento seleccionado."
 authors:
   - jamesmontemagno
 lastUpdated: 2026-09-28
 ---
 
-Mantén juntos el editor, el chat, los archivos y la vista previa. Crearás el cuestionario, lo probarás en el explorador integrado y, después, enviarás un elemento concreto directamente al chat para realizar un cambio acotado.
+Mantén juntos el editor, el chat, los archivos y la vista previa. Crearás el cuestionario, lo probarás en el navegador integrado y, después, enviarás un elemento concreto directamente al chat para realizar un cambio acotado.
 
 En esta lección:
 
 - crearás el cuestionario en un único `index.html`.
-- previsualizarás el cuestionario en el explorador integrado.
+- previsualizarás el cuestionario en el navegador integrado.
 - seleccionarás un elemento en el explorador y lo perfeccionarás.
 
 ## Crea el cuestionario
@@ -19,23 +19,23 @@ En esta lección:
 Envía el siguiente prompt en Copilot Chat:
 
 ```plaintext
-Create a colorful, accessible space exploration quiz with 10 questions in a single index.html. Add a progress bar, score counter, animated correct and incorrect feedback, and a results screen. Use no server or dependencies. Open it in the VS Code integrated browser.
+Crea un cuestionario de exploración espacial colorido y accesible, con 10 preguntas en un único archivo index.html. Añade una barra de progreso, un contador de puntuación, efectos visuales animados para las respuestas correctas e incorrectas y una pantalla de resultados. No uses servidor ni dependencias. Ábrelo en el navegador integrado de VS Code.
 ```
 
 1. Revisa el archivo generado en el editor.
-2. Abre el explorador integrado y responde a varias preguntas.
+2. Abre el navegador integrado y responde a varias preguntas.
 3. Abre **Source Control** en cualquier momento para ver los archivos modificados y las diferencias.
 
 ## Selecciona un elemento y perfecciónalo
 
-El explorador integrado puede enviar un elemento concreto directamente al chat, así que no tienes que describir a qué botón te refieres.
+El navegador integrado puede enviar un elemento concreto directamente al chat, así que no tienes que describir a qué botón te refieres.
 
-1. Con el cuestionario abierto en el explorador integrado, inicia la selección de un elemento desde la barra de herramientas del explorador.
+1. Con el cuestionario abierto en el navegador integrado, inicia la selección de un elemento desde la barra de herramientas del navegador.
 2. Selecciona los botones de respuesta para adjuntar ese elemento al siguiente mensaje de chat.
 3. Envía el siguiente prompt y observa cómo se vuelve a cargar la vista previa:
 
    ```plaintext
-   Using the selected element, make the answer buttons feel more tactile: add a subtle press state, a clearer focus ring for keyboard users, and a smoother transition into the correct and incorrect colors. Change nothing else.
+   Usa el elemento seleccionado para que los botones de respuesta parezcan más táctiles: añade un estado de pulsación sutil, un anillo de foco más visible para quienes usan el teclado y una transición más fluida hacia los colores de respuesta correcta e incorrecta. No cambies nada más.
    ```
 
 4. Lee las diferencias en **Source Control** antes de conservar el cambio.

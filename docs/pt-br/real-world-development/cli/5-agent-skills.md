@@ -83,7 +83,7 @@ Como destacado anteriormente, as skills são invocadas automaticamente pelo Copi
 1. Peça que o Copilot crie um PR usando o prompt a seguir:
 
     ```
-    Can you please create a pull request for me!
+    Você pode criar um pull request para mim?
     ```
 
 2. O Copilot reconhecerá a solicitação. Após alguns instantes, você verá o Copilot indicar que está usando a skill **make-contribution**.
@@ -115,7 +115,7 @@ As skills são perfeitas para tarefas, mas, para operações mais robustas, vale
 - [Repositório Agent Skills][agent-skills-repo]
 - [Agent Skills no awesome-copilot][awesome-copilot-skills]
 
-[previous-lesson]: ../4-mcp/
-[next-lesson]: ../6-custom-agents/
+[previous-lesson]: ../4-custom-instructions/
+[next-lesson]: ../6-mcp-playwright/
 [about-agent-skills]: https://docs.github.com/copilot/concepts/agents/about-agent-skills
 [awesome-copilot-skills]: https://github.com/github/awesome-copilot/tree/main/skills

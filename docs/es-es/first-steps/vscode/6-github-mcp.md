@@ -1,6 +1,6 @@
 ---
 title: "Lección 6 - Dar a Copilot herramientas para trabajar con GitHub"
-description: "Habilita y revisa el servidor MCP de GitHub en VS Code antes de pedir a Copilot que trabaje con incidencias y solicitudes de incorporación de cambios."
+description: "Habilita y revisa el servidor de Model Context Protocol (MCP) de GitHub en VS Code antes de pedir a Copilot que trabaje con incidencias y solicitudes de incorporación de cambios."
 authors:
   - jamesmontemagno
 lastUpdated: 2026-09-28

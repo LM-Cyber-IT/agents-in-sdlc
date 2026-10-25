@@ -27,7 +27,7 @@ En esta lección:
 3. Selecciona el botón **Create Pull Request** que aparece en **Source Control**. Copilot redacta el título y la descripción a partir de tus commits, así que obtienes una solicitud de incorporación de cambios mejor que si la pides desde cero.
 4. Solicita una **Copilot code review** mientras creas la solicitud de incorporación de cambios, desde la vista **GitHub** de VS Code o en GitHub.
 5. Pide a Copilot, con GitHub MCP, que inspeccione la solicitud de incorporación de cambios, resuelva los conflictos de combinación, atienda los comentarios de revisión e investigue las comprobaciones de CI que fallen.
-6. Vuelve a probar en el explorador integrado, revisa cada cambio propuesto y actualiza la rama.
+6. Vuelve a probar en el navegador integrado, revisa cada cambio propuesto y actualiza la rama.
 7. Cuando las comprobaciones y la revisión hayan terminado, pide al agente que combine la solicitud o combínala desde la integración de GitHub.
 
 > [!NOTE]

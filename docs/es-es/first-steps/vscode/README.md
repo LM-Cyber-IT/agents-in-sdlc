@@ -9,7 +9,7 @@ lastUpdated: 2026-09-28
 
 Realiza un recorrido práctico por GitHub Copilot en Visual Studio Code, pensado para principiantes. Crearás un Space Quiz lleno de color desde una carpeta vacía y aprenderás el ciclo de trabajo del editor: crear en un área de trabajo, inspeccionar el contexto, probar antes de que Git escriba nada, planificar antes de editar y dejar que las herramientas de GitHub gestionen incidencias y solicitudes de incorporación de cambios sin salir de VS Code.
 
-El taller dura aproximadamente entre 60 y 90 minutos. El proyecto utiliza un único archivo HTML sin dependencias de ejecución, así que puedes centrarte en aprender a usar Copilot en el editor.
+El taller dura aproximadamente entre 60 y 90 minutos. El proyecto utiliza un único archivo escrito en lenguaje de marcado de hipertexto (HTML), sin dependencias de ejecución, así que puedes centrarte en aprender a usar Copilot en el editor.
 
 > [!NOTE]
 > Este taller fue creado por [James Montemagno][james] y adaptado de [Primeros pasos con GitHub Copilot][source-lab]. El contenido original está disponible bajo la [licencia MIT][source-license].
@@ -19,7 +19,7 @@ El taller dura aproximadamente entre 60 y 90 minutos. El proyecto utiliza un ún
 | Lección | Tema | Qué harás |
 | ------ | ----- | ---------------- |
 | [0. Requisitos previos y configuración][lesson-0] | Configuración | Comprueba los requisitos previos, añade la extensión de GitHub, abre una carpeta y elige un modelo |
-| [1. Crear en el área de trabajo][lesson-1] | Creación | Crea el cuestionario, previsualízalo en el explorador integrado y perfecciona un elemento que selecciones |
+| [1. Crear en el área de trabajo][lesson-1] | Creación | Crea el cuestionario, previsualízalo en el navegador integrado y perfecciona un elemento que selecciones |
 | [2. Recoger las instrucciones del proyecto][lesson-2] | Instrucciones | Genera y adapta `.github/copilot-instructions.md` con `/init` |
 | [3. Inspeccionar el contexto y probar][lesson-3] | Pruebas | Inspecciona el contexto del chat y ejecuta una prueba de humo antes de que Git escriba nada |
 | [4. Publicar el proyecto][lesson-4] | Publicación | Inicializa, crea un commit y publica con Source Control |

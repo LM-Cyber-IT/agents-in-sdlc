@@ -6,14 +6,14 @@ authors:
 lastUpdated: 2026-09-28
 ---
 
-Has completado el ciclo de trabajo del editor: has creado en el editor, recogido las instrucciones, probado en el explorador integrado, planificado antes de editar, combinado con las herramientas de GitHub y delegado la siguiente idea a una sesión en la nube.
+Has completado el ciclo de trabajo del editor: has creado en el editor, recogido las instrucciones, probado en el navegador integrado, planificado antes de editar, combinado con las herramientas de GitHub y delegado la siguiente idea a una sesión en la nube.
 
 ## Qué has completado
 
 Has:
 
 - confirmado que Copilot Chat funciona y añadido la extensión GitHub Pull Requests and Issues.
-- creado el cuestionario y perfeccionado un elemento seleccionado en el explorador integrado.
+- creado el cuestionario y perfeccionado un elemento seleccionado en el navegador integrado.
 - generado `.github/copilot-instructions.md` con `/init`.
 - inspeccionado el contexto del chat y realizado una prueba de humo antes de que Git escribiera nada.
 - publicado con **Source Control** y un mensaje de commit redactado por Copilot.

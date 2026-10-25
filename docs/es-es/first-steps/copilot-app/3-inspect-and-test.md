@@ -6,7 +6,7 @@ authors:
 lastUpdated: 2026-10-12
 ---
 
-Ahora que la sesión ha realizado trabajo real, ya hay algo que inspeccionar. Confirma sobre qué está trabajando el agente y, después, deja que maneje el cuestionario en el explorador integrado e informe de lo que ha ocurrido realmente, no de lo que pretendía hacer.
+Ahora que la sesión ha realizado trabajo real, ya hay algo que inspeccionar. Confirma sobre qué está trabajando el agente y, después, deja que maneje el cuestionario en el navegador integrado e informe de lo que ha ocurrido realmente, no de lo que pretendía hacer.
 
 En esta lección:
 
@@ -30,7 +30,7 @@ Este menú identifica el proyecto en el que trabaja la sesión y proporciona con
 
 Selecciona el control de uso a la izquierda del micrófono para abrir el menú del plan y del uso de la sesión. El micrófono está entre el control de uso y **Send**.
 
-![Ilustración del menú de uso con el micrófono entre el control de uso y el botón Send. Muestra el plan GitHub Copilot Pro+, los créditos de IA de la sesión, los recuentos de tokens de entrada y salida y un uso del contexto del 16 % de 400 mil tokens.](../../../_images/first-steps-app-usage-details.svg)
+![Ilustración del menú de uso con el micrófono entre el control de uso y el botón Send. Muestra el plan GitHub Copilot Pro+, los créditos de inteligencia artificial (IA) de la sesión, los recuentos de tokens de entrada y salida y un uso del contexto del 16 % de 400 mil tokens.](../../../_images/first-steps-app-usage-details.svg)
 
 Este menú separa el uso de la cuenta y de la sesión de los controles del proyecto:
 
@@ -48,13 +48,13 @@ Comprueba **Context** a medida que crece la sesión. Cuando se llena, al agente 
 
 ## Prueba antes de que Git escriba nada
 
-El explorador integrado es un explorador real, así que el agente puede manejar el cuestionario y comprobar su comportamiento. Envía el siguiente prompt:
+El navegador integrado es un navegador real, así que el agente puede manejar el cuestionario y comprobar su comportamiento. Envía el siguiente prompt:
 
 ```plaintext
-Run a browser-level smoke test for the quiz in the integrated browser. Check keyboard navigation, score updates, correct and incorrect feedback, and the results screen. Fix any failures, then report what passed.
+Ejecuta una prueba de humo del cuestionario en el navegador integrado. Comprueba la navegación con el teclado, las actualizaciones de puntuación, los efectos visuales para las respuestas correctas e incorrectas y la pantalla de resultados. Corrige los fallos y, después, indica qué ha funcionado.
 ```
 
-1. Observa el explorador integrado mientras el agente recorre las preguntas.
+1. Observa el navegador integrado mientras el agente recorre las preguntas.
 2. Si algo falla, deja que el agente lo corrija y vuelva a ejecutar la prueba hasta que todo pase.
 3. Continúa solo cuando la creación del proyecto y las pruebas se hayan completado correctamente.
 

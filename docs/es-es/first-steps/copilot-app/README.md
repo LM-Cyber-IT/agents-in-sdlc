@@ -9,7 +9,7 @@ lastUpdated: 2026-10-12
 
 Realiza un recorrido práctico por la aplicación GitHub Copilot, pensado para principiantes. Crearás un Space Quiz lleno de color desde una carpeta vacía y recorrerás todo el ciclo de desarrollo, desde el primer prompt hasta una solicitud de incorporación de cambios revisada y un sitio publicado en GitHub Pages.
 
-El taller dura aproximadamente entre 60 y 90 minutos. El proyecto utiliza un único archivo HTML sin dependencias de ejecución, así que puedes centrarte en aprender a usar la aplicación y sus flujos de trabajo con agentes.
+El taller dura aproximadamente entre 60 y 90 minutos. El proyecto utiliza un único archivo escrito en lenguaje de marcado de hipertexto (HTML), sin dependencias de ejecución, así que puedes centrarte en aprender a usar la aplicación y sus flujos de trabajo con agentes.
 
 > [!NOTE]
 > Este taller fue creado por [James Montemagno][james] y adaptado de [Primeros pasos con GitHub Copilot][source-lab]. El contenido original está disponible bajo la [licencia MIT][source-license].
@@ -20,7 +20,7 @@ El taller dura aproximadamente entre 60 y 90 minutos. El proyecto utiliza un ún
 | ------ | ----- | ---------------- |
 | [0. Requisitos previos y configuración][lesson-0] | Configuración | Comprueba los requisitos previos, instala la aplicación, elige un modelo y explora el área de trabajo |
 | [1. Crear el área de trabajo][lesson-1] | Creación | Inicia una sesión Interactive en una carpeta local vacía |
-| [2. Crear y perfeccionar][lesson-2] | Creación | Crea el cuestionario y perfecciónalo en el explorador integrado |
+| [2. Crear y perfeccionar][lesson-2] | Creación | Crea el cuestionario y perfecciónalo en el navegador integrado |
 | [3. Inspeccionar y probar][lesson-3] | Contexto y pruebas | Revisa los detalles del proyecto y del uso y, después, ejecuta una prueba de humo en el explorador |
 | [4. Recoger las instrucciones del proyecto][lesson-4] | Instrucciones | Genera y adapta las instrucciones del agente con `/init` |
 | [5. Publicar el proyecto][lesson-5] | Publicación | Crea un repositorio público de GitHub a partir del proyecto local |

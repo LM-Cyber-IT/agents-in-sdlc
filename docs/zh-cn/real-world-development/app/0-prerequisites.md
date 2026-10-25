@@ -3,7 +3,7 @@ title: "第 0 课 - 先决条件"
 description: "为 GitHub Copilot app 课程做好准备：为 Tailspin Toys 项目安装 Node.js，并通过模板创建自己的存储库副本。"
 authors:
   - geektrainer
-lastUpdated: 2026-06-30
+lastUpdated: 2026-10-22
 ---
 
 GitHub Copilot app 是一款桌面应用，作为 Copilot 和 GitHub 的中央枢纽。它支持快速访问议题和拉取请求，也支持使用 GitHub Copilot 进行构建。在本研讨会中，你将在本地使用基于 Astro 构建的 Tailspin Toys 应用和 GitHub Copilot app。开始前，请先确保本地已安装 Node.js，然后再安装 Copilot app。
@@ -15,7 +15,7 @@ GitHub Copilot app 是一款桌面应用，作为 Copilot 和 GitHub 的中央�
 
 ## 安装 Node.js
 
-多节课程会要求智能体构建功能，并在本地运行 Tailspin Toys 测试套件。这需要 [**Node.js**][nodejs]，它是项目唯一需要的运行时。安装当前的 **LTS** 版本。
+多节课程会要求智能体构建功能，并在本地运行 Tailspin Toys 测试套件。这需要 [**Node.js**][nodejs]，它是项目唯一需要的运行时。安装当前的长期支持（LTS）版本。
 
 所有平台上最简单的方式都是使用官方安装程序：
 
@@ -24,9 +24,10 @@ GitHub Copilot app 是一款桌面应用，作为 Copilot 和 GitHub 的中央�
 
     ```shell
     node --version
+    npm --version
     ```
 
-3. 如果满足项目 README 和 `package.json` 中的要求，可以跳到下一节。
+3. 如果两个命令都成功，且 Node.js 满足项目 README 和 `package.json` 中的要求，可以跳到下一节。
 
 > [!TIP]
 > 仅当尚未安装 Node 或需要更新时，才需要完成以下步骤。
@@ -39,12 +40,16 @@ GitHub Copilot app 是一款桌面应用，作为 Copilot 和 GitHub 的中央�
 
     ```bash
     node --version
+    npm --version
     ```
 
-9. 应显示刚安装的版本。
+9. 应显示已安装的 Node.js 和 npm 版本。
 
 > [!IMPORTANT]
-> 每个工作树还需要项目依赖项及用于 E2E 检查的 Playwright Chromium。准备工作树时，请遵循 Tailspin Toys 存储库的 README，并在批准前审查所有安装请求。
+> Copilot app 中的智能体也必须能够运行 `node --version` 和 `npm --version`。常用终端中运行成功，并不代表应用也能访问这些命令。安装 Node.js 或更改 PATH 后，请完全退出并重新打开应用。如果会话中仍有命令运行失败，请先按照[会话环境故障排除步骤][session-environment]解决，再继续操作。
+
+> [!IMPORTANT]
+> 每个工作树还需要项目依赖项及用于端到端（E2E）检查的 Playwright Chromium。准备工作树时，请遵循 Tailspin Toys 存储库的 README，并在批准任何安装请求前先进行审查。
 
 ## 设置实验存储库
 
@@ -59,12 +64,12 @@ GitHub Copilot app 是一款桌面应用，作为 Copilot 和 GitHub 的中央�
 
     ![Create a new repository 表单，其中 github-samples/tailspin-toys 被设为模板，且已填写存储库名称](../../../_images/app-0-create-repository.png)
 
-4. 记下所创建的存储库路径 (**organization-or-user-name/repository-name**)，后续实验会用到该路径。
+4. 记下所创建的存储库路径（`organization-or-user-name/repository-name`），后续实验会用到该路径。
 
 > [!NOTE]
 > 通过模板创建存储库时，系统会自动创建一组 GitHub 议题作为待办事项。整个研讨会都会使用这些议题，无需自行创建。
 
-使用工作坊模板的新副本。其中包含存储库指令、应用代码、测试、quality-checks 技能和现有画布扩展。你将在工作坊中自定义该技能，并创建 QA 智能体。如果使用旧副本，请向讲师确认其中包含所需文件。
+5. 使用工作坊模板的新副本。其中包含存储库说明、应用代码、测试、`quality-checks` 技能和现有画布扩展。你将在工作坊中自定义技能并创建 QA 智能体。如果使用旧副本，请向讲师确认其中包含所需文件。
 
 ## 总结与后续步骤
 
@@ -86,3 +91,4 @@ GitHub Copilot app 是一款桌面应用，作为 Copilot 和 GitHub 的中央�
 [node-download]: https://nodejs.org/en/download
 [template-repository]: https://docs.github.com/repositories/creating-and-managing-repositories/creating-a-template-repository
 [about-copilot-app]: https://docs.github.com/copilot/concepts/agents/github-copilot-app
+[session-environment]: ../3-agent-modes/#从议题启动会话

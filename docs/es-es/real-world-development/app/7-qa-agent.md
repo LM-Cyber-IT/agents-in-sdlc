@@ -1,12 +1,12 @@
 ---
-title: "Lección 7 - Crear y utilizar un agente de QA"
-description: "Crea un perfil de QA que parta de los requisitos y combine cobertura de pruebas, la habilidad quality-checks y observaciones directas del navegador."
+title: "Lección 7 - Crear y utilizar un agente de control de calidad (QA)"
+description: "Crea un perfil de control de calidad (QA) que parta de los requisitos y combine cobertura de pruebas, la habilidad quality-checks y observaciones directas del navegador."
 authors:
   - geektrainer
 lastUpdated: 2026-09-17
 ---
 
-Has utilizado la habilidad `quality-checks` para ejecutar comprobaciones automatizadas y MCP de Playwright para observar la experiencia de filtrado en un navegador. Ahora reunirás estas capacidades en un agente personalizado con un proceso de QA claramente definido.
+Has utilizado la habilidad `quality-checks` para ejecutar comprobaciones automatizadas y el servidor de Model Context Protocol (MCP) de Playwright para observar la experiencia de filtrado en un navegador. Ahora reunirás estas capacidades en un agente personalizado con un proceso de QA claramente definido.
 
 En esta lección:
 
@@ -32,12 +32,14 @@ Antes de abrir la PR de la funcionalidad, pedirás a Copilot que cree un perfil 
 2. Envía la siguiente indicación a Copilot para crear el nuevo agente personalizado:
 
     ```plaintext
-    Create a custom agent named QA in .github/agents/qa.agent.md. It should check features against their issues and agreed requirements, follow the repository instructions, run the quality-checks skill, use Playwright MCP to verify behavior, and add tests when coverage is missing.
+    Crea un agente personalizado llamado QA en .github/agents/qa.agent.md. Debe comprobar las funcionalidades según sus incidencias y los requisitos acordados, seguir las instrucciones del repositorio, ejecutar la habilidad quality-checks, usar el servidor MCP de Playwright para verificar el comportamiento y añadir pruebas si falta cobertura.
 
-    Have it report each requirement as pass, fail, or blocked with supporting evidence. It must ask before changing implementation code, and it must not commit changes or open pull requests. Use the current model and available tools. Just create the profile for now so I can review it.
+    Debe indicar cada requisito como pass, fail o blocked y aportar pruebas que respalden el resultado. Debe preguntar antes de cambiar el código de implementación y no debe confirmar cambios ni abrir solicitudes de incorporación de cambios. Usa el modelo actual y las herramientas disponibles. Por ahora, crea solo el perfil para que pueda revisarlo.
     ```
 
 ## Examinar el perfil
+
+Revisa el perfil antes de usar el agente nuevo para confirmar que Copilot ha recogido el flujo de trabajo y los límites previstos.
 
 1. Abre **Changes** y selecciona `.github/agents/qa.agent.md`.
 2. Lee el frontmatter. `description` es obligatorio; `name` es opcional, pero incluirlo proporciona al agente un nombre visible claro.
@@ -54,7 +56,7 @@ Después de revisar el perfil, selecciona QA en la sesión actual para que pueda
 3. Envía la indicación siguiente para pedir a QA que revise la funcionalidad:
 
     ```plaintext
-    Review the filtering feature against the issue and the decisions in our plan. Is it ready for a PR?
+    Revisa la funcionalidad de filtrado según la incidencia y las decisiones de nuestro plan. ¿Está lista para una solicitud de incorporación de cambios?
     ```
 
 4. Confirma que QA utiliza la incidencia y las decisiones de planificación correctas. Proporciona la URL de la incidencia o el contexto que falte si lo solicita.

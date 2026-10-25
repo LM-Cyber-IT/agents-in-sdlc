@@ -85,14 +85,14 @@ Agora que você está no prompt do Copilot CLI pela primeira vez, vamos confiar 
 2. Neste workshop, selecione **Yes, and remember this folder for future sessions**, já que você trabalhará neste repositório ao longo de toda a atividade.
 3. Faça uma pergunta simples ao Copilot para verificar se tudo funciona:
 
-    ```
-    What files are in this project?
+    ```plaintext
+    Quais arquivos existem neste projeto?
     ```
 
 4. O Copilot deverá explorar o repositório e fornecer um resumo da estrutura do projeto.
 5. Experimente o comando `/help` para ver os comandos de barra disponíveis:
 
-    ```
+    ```plaintext
     /help
     ```
 
@@ -120,7 +120,7 @@ Agora que o Copilot CLI está instalado, vamos fornecer ao Copilot algum context
 - [Usar o Copilot CLI][using-copilot-cli]
 
 [previous-lesson]: ../0-prerequisites/
-[next-lesson]: ../2-custom-instructions/
+[next-lesson]: ../2-add-star-rating/
 [install-copilot-cli]: https://docs.github.com/copilot/how-tos/set-up/install-copilot-cli
 [install-npm]: https://docs.github.com/copilot/how-tos/copilot-cli/set-up-copilot-cli/install-copilot-cli#installing-with-npm-all-platforms
 [install-winget]: https://docs.github.com/copilot/how-tos/copilot-cli/set-up-copilot-cli/install-copilot-cli#installing-with-winget-windows

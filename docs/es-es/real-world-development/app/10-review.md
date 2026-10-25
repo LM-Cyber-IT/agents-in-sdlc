@@ -1,6 +1,6 @@
 ---
 title: "Lección 10 - Repaso y pasos siguientes"
-description: "Repasa el flujo de la aplicación, los dos hitos de PR, los ejercicios de lienzo y las prácticas de calidad reutilizables; después, explora otros recursos."
+description: "Repasa el flujo de la aplicación, los dos hitos de solicitudes de incorporación de cambios (PR), los ejercicios de lienzo y las prácticas de calidad reutilizables; después, explora otros recursos."
 authors:
   - geektrainer
 lastUpdated: 2026-09-29
@@ -12,8 +12,8 @@ Has utilizado la aplicación GitHub Copilot durante un flujo continuo de Tailspi
 - iniciar una sesión específica de valoraciones por estrellas, revisar el resultado en un lienzo de navegador y combinar manualmente tu primera solicitud de incorporación de cambios (PR).
 - partir de la incidencia de filtrado, definir el enfoque en modo **Plan**, desarrollarlo en modo **Autopilot** y revisarlo en modo **Interactive**.
 - orientar al agente con instrucciones personalizadas y después personalizar la habilidad `quality-checks` existente y utilizarla para ejecutar pruebas unitarias, lint y comprobaciones de tipos.
-- probar el trabajo con el servidor MCP de Playwright en un navegador real.
-- crear y seleccionar un agente personalizado QA para evaluar requisitos, cobertura, resultados de scripts de la habilidad y pruebas de observación del navegador.
+- probar el trabajo con el servidor de Model Context Protocol (MCP) de Playwright en un navegador real.
+- crear y seleccionar un agente personalizado de control de calidad (QA) para evaluar requisitos, cobertura, resultados de scripts de la habilidad y pruebas de observación del navegador.
 - revisar el cambio completo de filtrado y autorizar **Agent Merge** para la segunda PR.
 - utilizar el lienzo Database Explorer existente y, después, crear y probar un lienzo de clasificación respaldado por el repositorio.
 
@@ -24,7 +24,7 @@ El taller tiene dos hitos de PR, cada uno en su propia rama a partir de `main` a
 1. **Valoraciones por estrellas:** mostrar el `starRating` existente y un estado explícito sin valoración en las tarjetas de juegos.
 2. **Filtrado y flujo de calidad:** implementar el filtrado, actualizar las instrucciones y aplicarlas a la funcionalidad, personalizar el informe de `quality-checks`, crear un perfil QA e incluir las pruebas asociadas.
 
-Desde la planificación del filtrado hasta la apertura de su PR, utilizaste la misma sesión, worktree y rama. Reunimos ese trabajo en una sola PR para agilizar el taller. Después, utilizaste Database Explorer y creaste un lienzo de clasificación respaldado por el repositorio sin repetir el flujo de PR.
+Desde la planificación del filtrado hasta la apertura de su PR, utilizaste la misma sesión, árbol de trabajo (worktree) y rama. Reunimos ese trabajo en una sola PR para agilizar el taller. Después, utilizaste Database Explorer y creaste un lienzo de clasificación respaldado por el repositorio sin repetir el flujo de PR.
 
 ## Distintos tipos de verificación
 

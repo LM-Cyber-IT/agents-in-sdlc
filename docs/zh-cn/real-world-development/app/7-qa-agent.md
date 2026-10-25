@@ -6,7 +6,7 @@ authors:
 lastUpdated: 2026-09-17
 ---
 
-你已使用 `quality-checks` 技能运行自动化检查，并使用 Playwright MCP 在浏览器中观察筛选体验。现在，你将通过定义清晰 QA 流程的自定义智能体，将这些能力结合起来。
+你已使用 `quality-checks` 技能运行自动化检查，并使用 Playwright 模型上下文协议（MCP）在浏览器中观察筛选体验。现在，你将通过定义清晰质量保证（QA）流程的自定义智能体，将这些能力结合起来。
 
 在本课中，你将：
 
@@ -16,7 +16,7 @@ lastUpdated: 2026-09-17
 
 ## 场景
 
-创建拉取请求 (PR) 前，Tailspin Toys 希望以一致的方式审查需求、代码质量、自动化检查、测试覆盖和浏览器行为。自定义智能体可协调这一 QA 流程，并提供可复用的报告。
+创建拉取请求（PR）前，Tailspin Toys 希望以一致的方式审查需求、代码质量、自动化检查、测试覆盖和浏览器行为。自定义智能体可协调这一 QA 流程，并提供可复用的报告。
 
 ## 什么是自定义智能体？
 
@@ -31,13 +31,15 @@ lastUpdated: 2026-09-17
 1. 确认会话处于 **Interactive** 模式。
 2. 向 Copilot 发送以下提示词，创建新的自定义智能体：
 
-  ```plaintext
-  Create a custom agent named QA in .github/agents/qa.agent.md. It should check features against their issues and agreed requirements, follow the repository instructions, run the quality-checks skill, use Playwright MCP to verify behavior, and add tests when coverage is missing.
+    ```plaintext
+    Create a custom agent named QA in .github/agents/qa.agent.md. It should check features against their issues and agreed requirements, follow the repository instructions, run the quality-checks skill, use Playwright MCP to verify behavior, and add tests when coverage is missing.
 
-  Have it report each requirement as pass, fail, or blocked with supporting evidence. It must ask before changing implementation code, and it must not commit changes or open pull requests. Use the current model and available tools. Just create the profile for now so I can review it.
-  ```
+    Have it report each requirement as pass, fail, or blocked with supporting evidence. It must ask before changing implementation code, and it must not commit changes or open pull requests. Use the current model and available tools. Just create the profile for now so I can review it.
+    ```
 
 ## 检查配置文件
+
+使用新智能体前，先审查配置文件，确认 Copilot 已记录预期的 QA 工作流和权限边界。这样可以避免配置不完整或权限过宽的智能体在你只要求验证功能时修改实现。
 
 1. 打开 **Changes**，选择 `.github/agents/qa.agent.md`。
 2. 阅读 frontmatter。`description` 是必需字段；`name` 可选，但添加后可为智能体提供明确的显示名称。
@@ -57,7 +59,7 @@ lastUpdated: 2026-09-17
     Review the filtering feature against the issue and the decisions in our plan. Is it ready for a PR?
     ```
 
-4. 确认 QA 使用了正确的议题和规划决策。如果它提出请求，请提供议题 URL 或缺少的上下文。
+4. 确认 QA 使用了正确的议题和规划决策。如果它提出请求，请提供议题的统一资源定位符（URL）或缺少的上下文。
 5. 完成后阅读其报告。
 
 ## 总结与后续步骤

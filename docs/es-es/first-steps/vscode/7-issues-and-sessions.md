@@ -6,7 +6,7 @@ authors:
 lastUpdated: 2026-09-28
 ---
 
-Con GitHub MCP habilitado, Copilot puede crear y leer incidencias directamente desde el chat.
+Con el servidor de GitHub basado en Model Context Protocol (MCP) habilitado, Copilot puede crear y leer incidencias directamente desde el chat.
 
 En esta lección:
 
@@ -19,7 +19,7 @@ En esta lección:
 Envía el siguiente prompt:
 
 ```plaintext
-Review the space quiz and suggest three focused feature ideas. Use the GitHub tools to create a separate issue for each with a clear title, user-focused description, and acceptance criteria. Do not implement them yet.
+Revisa el Space Quiz y propón tres funcionalidades concretas. Usa las herramientas de GitHub para crear una incidencia independiente para cada una, con un título claro, una descripción centrada en el usuario y criterios de aceptación. No las implementes todavía.
 ```
 
 ## Implementa una incidencia
@@ -27,7 +27,7 @@ Review the space quiz and suggest three focused feature ideas. Use the GitHub to
 1. Abre la vista **GitHub** en la barra de actividad e inspecciona las nuevas incidencias.
 2. Elige una incidencia y selecciona el botón **+** en Copilot Chat para iniciar una nueva sesión para ella.
 3. Utiliza el modo Agent para implementar la incidencia mientras la sesión original sigue disponible para comparar.
-4. Ejecuta la prueba de humo del explorador integrado de la [lección 3][lesson-3] antes de crear una solicitud de incorporación de cambios.
+4. Ejecuta la prueba de humo del navegador integrado de la [lección 3][lesson-3] antes de crear una solicitud de incorporación de cambios.
 
 ## Resumen y pasos siguientes
 
